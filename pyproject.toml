@@ -38,7 +38,9 @@ ruff = ">=0.0.253"
 reuse = ">=1.1.0"
 
 [tool.poetry.plugins."fedora.messages"]
-"kerneltest.new" = "kerneltest_messages.thing:NewThingV1"
+"kerneltest.upload.new.v1" = "kerneltest_messages:UploadNewV1"
+"kerneltest.release.new.v1" = "kerneltest_messages:ReleaseNewV1"
+"kerneltest.release.edit.v1" = "kerneltest_messages:ReleaseEditV1"
 
 [tool.black]
 line-length = 100
